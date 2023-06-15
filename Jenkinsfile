@@ -43,6 +43,7 @@ pipeline {
             sh 'curl -LO "https://storage.googleapis.com/kubernetes-release/release/v1.20.5/bin/linux/amd64/kubectl"'  
             sh 'chmod u+x ./kubectl'
             sh './kubectl delete pod php-app-pod'
+            sh './kubectl delete service phpapp-svc'
             sh './kubectl run php-app-pod --image=jesusesd5/myphpapp'
             sh './kubectl expose pod php-app-pod --type=NodePort --port=8080 --target-port=8080 --name=phpapp-svc'
           }
