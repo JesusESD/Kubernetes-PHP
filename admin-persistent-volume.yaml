@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: admin-data-volume
+  labels:
+    type: local
+spec:
+  claimRef:
+    namespace: default
+    name: admin-data-volume-claim
+  storageClassName: manual
+  capacity:
+    storage: 3Gi
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    path: "/root/admin-data"

@@ -7,10 +7,10 @@
 			$todo =	$_POST['todo'];
 			if (!empty($todo)) {
 				if (insertTodo($todo,$connection) == true) {
-				echo "<script>alert('Todos Inserted');</script>";
+				echo "<script>alert('Task Inserted');</script>";
 			 }
 			}else{
-				echo "<script>alert('Please Inserted Todo');</script>";
+				echo "<script>alert('Please Insert Task');</script>";
 			}
 			
 			
@@ -20,7 +20,7 @@
 		$id  =  $_POST['id'];
 	  	$todo = $_POST['todo'];
 	  	 if(UpdateTodo($id,$todo,$connection)){
-			   echo "<script>alert('Todos Updated');</script>";
+			   echo "<script>alert('Task Updated');</script>";
 		   }
 			
 	}
@@ -28,14 +28,14 @@
 	if (isset($_GET['delete_id'])) {
 		$id = $_GET['delete_id'];
 		if (DeleteTodo($id,$connection) == true) {
-			echo "<script>alert('Todos Deleted');</script>";
+			echo "<script>alert('Task Deleted');</script>";
 		}
 		
 	}
 	if (isset($_GET['marking_id'])) {
 		$id = $_GET['marking_id'];
 		if (CompleteTodo($id,$connection)== true) {
-			echo "<script>alert('Todos Complete Successfully');</script>";
+			echo "<script>alert('Task Marked as Completed');</script>";
 		}
 	}
 
@@ -145,7 +145,7 @@
 	<form method="post" action="index.php">
 		<div>
 			<center>
-			<input type="text" name="todo" placeholder="create new todo" value="<?php if (isset($_POST['update_id'])) {echo $data['todo'];}  ?>" required>
+			<input type="text" name="todo" placeholder="Create new task" value="<?php if (isset($_POST['update_id'])) {echo $data['todo'];}  ?>" required>
 			<input type="hidden" name="id" value="<?php if (isset($_POST['update_id'])) {echo $data['id'];}  ?>" >
 			<input class="button" type="submit" value="Submit">
 			</center>
