@@ -39,10 +39,10 @@ pipeline {
     stage('Deploying container to Kubernetes') {
       steps{
         script {
-          //kubernetesDeploy(configs: "servidor-web-deploy-svc.yaml", kubeconfigId: 'kbconfig')
           withKubeCredentials(kubectlCredentials: [[credentialsId: 'TestKubernetes',serverUrl: 'https://192.168.68.119:6443']]) {
             sh 'curl -LO "https://storage.googleapis.com/kubernetes-release/release/v1.20.5/bin/linux/amd64/kubectl"'  
             sh 'chmod u+x ./kubectl'
+            sh './kubectl delete pod php-app-pod'
             sh './kubectl run php-app-pod --image=jesusesd5/myphpapp'
             sh './kubectl expose pod php-app-pod --type=NodePort --port=8080 --target-port=8080 --name=phpapp-svc'
           }
