@@ -45,7 +45,7 @@ pipeline {
             sh './kubectl delete pod php-app-pod'
             sh './kubectl delete service phpapp-svc'
             sh './kubectl run php-app-pod --image=jesusesd5/myphpapp'
-            sh './kubectl expose pod php-app-pod --type=NodePort --port=8080 --target-port=8080 --name=phpapp-svc'
+            sh './kubectl expose pod php-app-pod --type=NodePort --port=8088 --target-port=80 --name=phpapp-svc'
           }
         }
       }
