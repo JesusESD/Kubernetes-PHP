@@ -111,7 +111,6 @@
 			margin-top: 5px;
 		}
 		.wrapper{
-                        height:100%;
 			width:100%;
 			margin: 0 auto;
 			border-left: 2px solid #ddd;
@@ -142,6 +141,7 @@
 	</style>
 </head>
 <body>
+<h1>Task Master</h1>
 <div class="wrapper">
 	<form method="post" action="index.php">
 		<div>

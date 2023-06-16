@@ -1,0 +1,27 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: null
+  labels:
+    run: phpadmin-pod
+  name: phpadmin-pod
+spec:
+  containers:
+  - image: phpmyadmin
+    name: phpadmin-pod
+    volumeMounts:
+      - mountPath: "/root/mountadmin"
+        name: admin-data-storage
+    envFrom:
+    - configMapRef:
+        name: phpadmin-config
+    - secretRef:
+        name: phpadmin-secret
+    resources: {}
+  volumes:
+    - name : admin-data-storage
+      persistentVolumeClaim:
+        claimName: admin-data-volume-claim
+  dnsPolicy: ClusterFirst
+  restartPolicy: Always
+status: {}
