@@ -111,12 +111,12 @@
 			margin-top: 5px;
 		}
 		.wrapper{
-			width:40%;
+			width:80%;
 			margin: 0 auto;
 			border-left: 2px solid #ddd;
 			border-right: 2px solid #ddd;
 			border-top: 2px solid #ddd;
-			background-color:#bebebe;
+			background-color:#98bdd3;
 		}
 		.form {
 			display: inline-block;
