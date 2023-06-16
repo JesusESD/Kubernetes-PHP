@@ -141,7 +141,7 @@
 	</style>
 </head>
 <body style="background-color: #e0f0f4"> 
-<h1><center>This is a heading</center></h1>
+<h1><center>Task master</center></h1>
 <div class="wrapper">
 	<form method="post" action="index.php">
 		<div>
