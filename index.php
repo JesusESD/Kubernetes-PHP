@@ -111,7 +111,8 @@
 			margin-top: 5px;
 		}
 		.wrapper{
-			width:80%;
+                        height:100%;
+			width:100%;
 			margin: 0 auto;
 			border-left: 2px solid #ddd;
 			border-right: 2px solid #ddd;
