@@ -126,7 +126,7 @@
 			color: #3e3e3e;
 		}
 		.button{
-			background-color: #008080; /* Green */
+			background-color: #008080;
 			border: none;
 			color: white;
 			padding: 10px 16px;
@@ -141,7 +141,7 @@
 	</style>
 </head>
 <body>
-<h1><center>Task Master</center></h1>
+<h1 style="background-color: #98bdd3;"><center>This is a heading</center></h1>
 <div class="wrapper">
 	<form method="post" action="index.php">
 		<div>
