@@ -116,7 +116,7 @@
 			border-left: 2px solid #ddd;
 			border-right: 2px solid #ddd;
 			border-top: 2px solid #ddd;
-			background-color: #efdf6c;
+			background-color: #b8e5f1;
 		}
 		.form {
 			display: inline-block;
@@ -140,7 +140,7 @@
 		
 	</style>
 </head>
-<body style="background-color: #f2e68f"> 
+<body style="background-color: #e0f0f4"> 
 <h1><center>This is a heading</center></h1>
 <div class="wrapper">
 	<form method="post" action="index.php">
