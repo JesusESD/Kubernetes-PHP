@@ -175,6 +175,6 @@
 	</center>
 <?php } ?>
 </div>
-<img src="img/task.png">
+<img src="img/task.png"style="height:100vh; max-width:100%; object-fit: contain;">
 </body>
 </html>
