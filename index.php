@@ -141,7 +141,7 @@
 	</style>
 </head>
 <body>
-<h1>Task Master</h1>
+<h1><center>Task Master</center></h1>
 <div class="wrapper">
 	<form method="post" action="index.php">
 		<div>
