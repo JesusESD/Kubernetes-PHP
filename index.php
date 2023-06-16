@@ -141,7 +141,7 @@
 	</style>
 </head>
 <body>
-<h1 style="background-color: #98bdd3;"><center>This is a heading</center></h1>
+<h1><center>This is a heading</center></h1>
 <div class="wrapper">
 	<form method="post" action="index.php">
 		<div>
@@ -175,5 +175,6 @@
 	</center>
 <?php } ?>
 </div>
+<img src="img/task.png">
 </body>
 </html>
