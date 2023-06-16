@@ -103,7 +103,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>A Basic Todo</title>
+	<title>Task Master</title>
 		<style type="text/css">
 		input[type="text"]{
 			padding: 10px 20px 10px 20px;
@@ -126,7 +126,7 @@
 			color: #3e3e3e;
 		}
 		.button{
-			background-color: #4CAF50; /* Green */
+			background-color: #008080; /* Green */
 			border: none;
 			color: white;
 			padding: 10px 16px;
