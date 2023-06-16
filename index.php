@@ -140,7 +140,7 @@
 		
 	</style>
 </head>
-<body>
+<body style="background-color:#98bdd3"> 
 <h1><center>This is a heading</center></h1>
 <div class="wrapper">
 	<form method="post" action="index.php">
