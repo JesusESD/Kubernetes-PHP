@@ -3,5 +3,5 @@
 - Front End
 - Database
 - Docker
-- CI/CD: Jenkings
+- CI/CD: Jenkins
 - Kubernetes YAML configuration files
